@@ -4,6 +4,9 @@ class Field:
         self.height = height
         self.cars = []
 
+    def is_within_boundary(self, x, y):
+        return 0 <= x < self.width and 0 <= y < self.height
+
     def add_car(self, car):
         self.cars.append(car)
 

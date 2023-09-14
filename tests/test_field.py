@@ -43,6 +43,13 @@ class TestField(unittest.TestCase):
         self.carB.execute_command('F', self.field) # move west
         self.assertEqual(self.carB.x, 6)
         self.assertEqual(self.carB.y, 8)
+    
+    def test_boundary_check_true(self):
+        self.assertTrue(self.field.is_within_boundary(0, 0))
+        
+    def test_boundary_check_false(self): # out of bounds check
+        self.assertFalse(self.field.is_within_boundary(-1, 0))
+        self.assertFalse(self.field.is_within_boundary(11, 11))
 
 if __name__ == '__main__':
     unittest.main()
