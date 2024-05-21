@@ -1,5 +1,5 @@
 # Auto Driving Car Simulation
-This is a simple car simulation program I developed as part of a recent job application. 
+This is a simple car simulation program.
 
 ## Project description
 The Auto Driving Car Simulation is a command-line program that simulates an autonomous car in a rectangular field. The simulation includes features like multiple car handling, collision detection, and various car commands. It provides an engaging platform for testing different scenarios in autonomous driving.
